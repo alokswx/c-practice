@@ -23,8 +23,20 @@ int main() {
     *num2 = 20;
     printf("%d\n", num1);
     printf("%d\n", *num2);
+    if (num1 == (*num2)){
+        printf("YES\n");
+    } else {
+        printf("NO\n");
+    }
+
     **num3 = 30;
     printf("%d\n", num1);
     printf("%d\n", **num3);
+    if (num1 == (**num3)){
+        printf("YES\n");
+    } else {
+        printf("NO\n");
+    }
+
     return 0;
 }
